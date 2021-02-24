@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Release 1.0-R1 (Feb 24, 2021)</title>
+</head>
+<body>
+
+    <h3 id="release-1.0-r1-feb-24-2021">Release 1.0-R1 (Feb 24, 2021)</h3>
+<hr />
+<p><strong>Features</strong></p>
+<ul>
+<li>Remote API now allows streaming of collected 1D data sets to clients</li>
+<li>Remote API added new motion tasks:
+<ul>
+<li>Reset Encoder</li>
+<li>Get Axis Position</li>
+<li>Set Axis Position</li>
+<li>Axis Go To</li>
+<li>Axis Jog</li>
+<li>Axis Run</li>
+<li>Stop Axis</li>
+<li>Stop All Axes</li>
+</ul>
+</li>
+</ul>
+<p><strong>Changes</strong></p>
+<ul>
+<li>Scanner Landmarks page UI has been simplified</li>
+<li>Axis Homing page UI has been simplified</li>
+</ul>
+<p><strong>Fixes</strong></p>
+<ul>
+<li>Changing channels on Data Collection page with automatic display building would no change the current AScan.</li>
+<li>Using the Import Setup option would change the name of the current open setup file.</li>
+<li>Transducer Part and Serial Numbers not presnt in the Data Header</li>
+<li>Incorrect difference reported between Primary and Secondary cursors on 8bit data</li>
+</ul>
+<p><strong>Drivers</strong></p>
+<ul>
+<li>FocusPX - OpenView Version 1.1.70.1 or greater (Download <a href="https://www.utex.com/webapps/utexsupport.nsf/wPages/ASHA-BH9RM30805?Open">here</a>, Password: OlympusOpenView)</li>
+<li>Galil Motion Controller - gclib (Download <a href="https://www.galil.com/sw/pub/all/doc/gclib/html/windows.html">here</a>)</li>
+</ul>
+<br>
+<h3 id="release-1.0-rc8-dec-15-2020">Release 1.0-RC8 (Dec 15, 2020)</h3>
+<hr />
+<p><strong>Features</strong></p>
+<ul>
+<li>Encoder calibration for encoders can be changed on Data Collection page (only available when Load from Setup
+option is enabled on the specific axis in <em>Motors &amp; Encoders</em>)</li>
+</ul>
+<p><strong>Fixes</strong></p>
+<ul>
+<li>Fixed wrong checksum being generated for data generated in JSON format</li>
+<li>Focus Length units when creating Focal Laws follows application units now</li>
+<li>Beam selector on sweeps would not show current beam number</li>
+<li>Beam selector would not work on Calibration pages</li>
+</ul>
+<p><strong>Drivers</strong></p>
+<ul>
+<li>FocusPX - OpenView Version 1.1.67.3 or greater (Download <a href="https://www.utex.com/webapps/utexsupport.nsf/wPages/ASHA-BH9RM30805?Open">here</a>, Password: OlympusOpenView)</li>
+<li>Galil Motion Controller - gclib (Download <a href="https://www.galil.com/sw/pub/all/doc/gclib/html/windows.html">here</a>)</li>
+</ul>
+<br>
+<h3 id="release-1.0-rc7-oct-10-2020">Release 1.0-RC7 (Oct 10, 2020)</h3>
+<hr />
+<p><strong>Features</strong></p>
+<ul>
+<li>New bug reporting tool in <em>Help &gt; Bug Report</em> to generate a bug report package that can be emailed to Utex.</li>
+<li>IW Scan download page can be reached directly using <em>Help &gt; Check For Updates</em></li>
+<li>Remote controllers can now request current position of cursor on scanned data</li>
+</ul>
+<p><strong>Changes</strong></p>
+<ul>
+<li><span style="color:orange">&quot;Include In Setup File&quot; setting on motion axes has been replaced with &quot;Load From Setup File&quot;.
+<em>The former preference will not be converted, user must re-select the appropriate setting. It is also
+recommended to resave any setup file in use.</em></span>*</li>
+<li>Cursors on cscans now display their position with 3 decimal places of precision.</li>
+</ul>
+<p><strong>Fixes</strong></p>
+<ul>
+<li>Fixed OpenView synchro echo mode offset from zero in some cases</li>
+<li>OpenView devices have better connection errors</li>
+<li>Fixed beam number selector disappearing sometimes</li>
+<li>Fixed encoder preset units always being in mm for 1D and 2D recorders</li>
+</ul>
+<p><strong>Drivers</strong></p>
+<ul>
+<li>FocusPX - OpenView Version 1.1.66.10 or greater (Download <a href="https://www.utex.com/webapps/utexsupport.nsf/wPages/ASHA-BH9RM30805?Open">here</a>, Password: OlympusOpenView)</li>
+<li>Galil Motion Controller - gclib (Download <a href="https://www.galil.com/sw/pub/all/doc/gclib/html/windows.html">here</a>)</li>
+</ul>
+<br>
+<h3 id="release-1.0-rc6-sept-11-2020">Release 1.0-RC6 (Sept 11, 2020)</h3>
+<hr />
+<p><strong>Features</strong></p>
+<ul>
+<li><span style="color:orange">Added the ability to reorder ProbeSets and Channels.</span>*</li>
+<li>New unified palette editor for all IW Suite applications.</li>
+<li>Current setup and data file names are shown in the title bar instead of only setup file name.</li>
+<li>Added a display preference to launch the application with navigation bar collapsed or expanded.</li>
+<li>Added ability to print the entire histogram window to PDF.</li>
+</ul>
+<p><strong>Fixes</strong></p>
+<ul>
+<li>Tooltips on gates are now converted to inches</li>
+<li>Tooltips on tvg points are now converted to inches</li>
+<li>Expanding list of display sources now display a scrollbar when list is longer than window size</li>
+<li>Removed exit popup when right clicking anywhere in the UI</li>
+<li>Better handling of units when loading older machine configurations</li>
+<li>Scan freezing when the palette is changed on a CScan.</li>
+<li>Fixed annotations not being selectable on some display plots.</li>
+<li>Removed being able to drop annotations in histogram window.</li>
+</ul>
+<p><strong>Drivers</strong></p>
+<ul>
+<li>FocusPX - OpenView Version 1.1.64.3 or greater (Download <a href="https://www.utex.com/webapps/utexsupport.nsf/wPages/ASHA-BH9RM30805?Open">here</a>, Password: OlympusOpenView)</li>
+<li>Galil Motion Controller - gclib (Download <a href="https://www.galil.com/sw/pub/all/doc/gclib/html/windows.html">here</a>)</li>
+</ul>
+<br>
+<hr />
+<p>*<strong>Note:</strong> Features or Fixes marked in <span style="color:orange">orange</span> may affect operation of the application at a fundamental level.</p>
+
+
+</body>
+</html>
